@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="page">
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Greetins and welcome to the best Bar Rating application ever made in 6 (or less) hours. Enjoy your stay.</p>
+</div>
+
+@if (User.IsInRole("Admin"))
+{
+    <h1>Admin Mode Activated. Use responsibly!</h1>
+    <h3>Number of registered users:</h3>
+    <h3>Number of bars:</h3>
+    <h3>Number of reviews:</h3>
+}
+
+@if (!User.IsInRole("Admin"))
+{
+    <p>This should only be visible to the user and NOT ADMIN!!!</p>
+}
+</div>

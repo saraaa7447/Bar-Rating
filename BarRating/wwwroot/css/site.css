@@ -1,0 +1,38 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #c0ffee;
+}
+
+
+.row {
+    display: grid;
+    place-items: center;
+}
+
+* {
+    font-family: "Courier New", monospace;
+}
+
+.inputformatting {
+    display: table
+}
+
+
+h1 {
+    font-weight: bold;
+}
